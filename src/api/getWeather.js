@@ -1,10 +1,12 @@
 export async function getCurrentTemperature (latitude, longitude) {
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m`
 
   try {
     const response = await fetch(url)
     const data = await response.json()
     
+    console.log(data)
+
     const temperature = data.current.temperature_2m
     const unit = data.current_units.temperature_2m
 
