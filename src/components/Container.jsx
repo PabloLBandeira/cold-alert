@@ -56,7 +56,7 @@ export default function Container() {
         </div>
       )}
 
-<div className="flex flex-col-reverse items-center md:flex-row md:justify-between w-full">
+<div className="flex flex-col-reverse items-center md:flex-row md:justify-evenly w-full">
         {showBoxes ? (
           <>
             <UserMessage
@@ -68,8 +68,8 @@ export default function Container() {
             />
           </>
         ) : (
-          <div className="w-full text-center mt-4 px-4 md:w-6/12 md:mt-0 md:text-left lg:text-left">
-            <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white drop-shadow-md">
+          <div className="w-full text-center mt-4 px-4 md:w-6/12">
+            <p className="text-lg md:text-xl lg:text-2xl md:mt-4 font-semibold text-white drop-shadow-md">
               Será que precisa ponhar uma japona?
             </p>
           </div>

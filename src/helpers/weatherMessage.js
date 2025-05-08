@@ -56,22 +56,6 @@ function getUserMessages(userTemp, curitibaTemp) {
     interpretation = "Capaz mesmo! Calor do djanho! Desse jeito até as capivaras tão pegando fogo."
   }
 
-  /*
-  if (userTemp <= 0) {
-    interpretation = "Congelou. Já era.";
-  } else if (userTemp <= 10) {
-    interpretation = "Ponha uma japona";
-  } else if (userTemp <= 15) {
-    interpretation = "Um clima até que agradável.";
-  } else if (userTemp <= 20) {
-    interpretation = "Dá até pra surfar em Matinhos!";
-  } else if (userTemp <= 27) {
-    interpretation = "Tá quente.";
-  } else {
-    interpretation = "Já derretemo!";
-  }
-*/
-
   return { comparison, interpretation };
 }
 
