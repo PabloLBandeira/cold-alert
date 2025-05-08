@@ -5,8 +5,6 @@ export async function getCurrentTemperature (latitude, longitude) {
     const response = await fetch(url)
     const data = await response.json()
     
-    console.log(data)
-
     const temperature = data.current.temperature_2m
     const unit = data.current_units.temperature_2m
 

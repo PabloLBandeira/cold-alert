@@ -1,7 +1,5 @@
 function getWeatherImage (userTemp) {
 
-  console.log(userTemp)
-
   let image; 
   let alt;
 
